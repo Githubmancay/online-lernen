@@ -1,0 +1,35 @@
+{%extends "base.html"%}
+{%block title%} übe Englisch {%endblock%}
+{%block content%} 
+
+
+   
+<style> 
+    body {
+    background-image: url("/static/pics/E_aufkleber.avif");
+    background-size: cover;
+    opacity: 0.5;
+    }
+</style>
+
+    <br> </br>
+    <h2>What is it you want to practise?</h2>
+    <br> </br>
+
+        <p>
+            <a href="{{url_for('grammar')}}" class="btn btn-large btn-info ">grammar</a>
+        </p>
+
+        <p>
+            <a href="{{url_for('tenses')}}" class="btn btn-large btn-info ">tenses</a>
+        </p>
+        
+        <p>
+            <a href="{{url_for('vocab')}}" class="btn btn-large btn-info ">vocab</a>
+        </p>
+
+       
+
+
+
+{%endblock%}
