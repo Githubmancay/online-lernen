@@ -1,0 +1,40 @@
+h1{
+    color: rgb(0, 0, 0);
+    font-size:60px;
+    }
+    
+h2 {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+    
+h5{
+    font-weight:bold;
+}    
+    
+    
+body{
+    margin:0px;
+    padding:20px;
+    font-family: sans-serif;
+    background: #333333;
+    color: white;
+}
+
+
+.btn
+{
+    --bs-btn-font-weight: 600;
+    --bs-btn-font-size:20;
+    --bs-btn-color: black;
+}    
+
+
+
+.ul
+    {
+    background-color: #f4f4f4;
+}  
