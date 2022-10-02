@@ -71,7 +71,7 @@ def adverbs():
     form1 = AdverbForm1()
     message1 = ""
     if form1.validate_on_submit():
-        message1 = check_gap(form1.gap1.data, "loud")
+        message1 = check_gap(form1.gap1.data, "loudly")
     form2 = AdverbForm2()
     message2 = ""
     if form2.validate_on_submit():
