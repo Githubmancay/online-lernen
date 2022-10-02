@@ -2,21 +2,40 @@
 {%block title%} übe Deutsch {%endblock%}
 {%block content%} 
 
-<br> </br>
-<h2>Was möchtest du üben?</h2>
 
+<img class="backgroundImage" src="/static/pics/Grammatik1.jpg">
+<main>
+    <br> </br>
+    <h2>Was möchtest du üben?</h2>
 
-   
-<style> 
-    body {
-    background-image: url("/static/pics/D_Grammatik.jpg");
-    background-size: cover;
-    opacity: 0.8;
-    }
-</style>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="{{url_for ('static',filename='pics/Grammatik1.jpg')}}" class="card-img-top" alt="magnifying glass"/>
+              <div class="card-body">
+                <h5 class="card-title">Grammatik</h5>
+                <p class="card-text">
+                  Vokabeln oder Grammatik - hier kannst du Deutsch online üben
+                </p>
+                <a href="{{url_for ("Grammatik")}}" class="btn btn-info">zu den Übungen</a>
+              </div>
+            </div>
+          </div>
+        
+        
+          <div class="col">
+            <div class="card h-100">
+              <img src="{{url_for ('static',filename='pics/Zeit2.jpg')}}" class="card-img-top" alt="road sign"/>
+              <div class="card-body">
+                <h5 class="card-title">Wortschatz</h5>
+                <p class="card-text">Vokabeln oder Grammatik - hier kannst du Englisch online üben.</p>
+                <a href="{{url_for ("Wortschatz")}}" class="btn btn-info">zu den Übungen</a>
+              </div>
+            </div>
+          </div>
 
     
-
+</main>
+    
 
 {%endblock%}
-{%block Liste_Überblick%} {%endblock%}
