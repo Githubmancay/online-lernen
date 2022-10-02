@@ -3,32 +3,46 @@
 {%block content%} 
 
 
-   
-<style> 
-    body {
-    background-image: url("/static/pics/E_aufkleber.avif");
-    background-size: cover;
-    opacity: 0.5;
-    }
-</style>
 
-    <br> </br>
-    <h2>What is it you want to practise?</h2>
-    <br> </br>
 
-        <p>
-            <a href="{{url_for('grammar')}}" class="btn btn-large btn-info ">grammar</a>
-        </p>
+    
+<img class="backgroundImage" src="/static/pics/E_aufkleber.avif">
+<main>
+  <br> </br>
+  <h2>What is it you want to practise?</h2>
+  <br> </br>
 
-        <p>
-            <a href="{{url_for('tenses')}}" class="btn btn-large btn-info ">tenses</a>
-        </p>
-        
-        <p>
-            <a href="{{url_for('vocab')}}" class="btn btn-large btn-info ">vocab</a>
-        </p>
 
-       
+
+
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="{{url_for ('static',filename='pics/Grammar1.jpg')}}" class="card-img-top" alt="magnifying glass"/>
+                        <div class="card-body">
+                          <h5 class="card-title">grammar</h5>
+                          <p class="card-text">
+                            Vokabeln oder Grammatik - hier kannst du Deutsch online üben
+                          </p>
+                          <a href="{{url_for ("grammar")}}" class="btn btn-info">practise online</a>
+                        </div>
+                      </div>
+                    </div>
+                  
+                  
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="{{url_for ('static',filename='pics/tenses2.jpg')}}" class="card-img-top" alt="road sign"/>
+                        <div class="card-body">
+                          <h5 class="card-title">tenses</h5>
+                          <p class="card-text">Vokabeln oder Grammatik - hier kannst du Englisch online üben.</p>
+                          <a href="{{url_for ("tenses")}}" class="btn btn-info">practise online</a>
+                        </div>
+                      </div>
+                    </div>
+            
+</main>   
+
 
 
 
